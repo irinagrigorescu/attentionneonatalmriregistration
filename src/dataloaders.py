@@ -167,7 +167,7 @@ class ImageRegistrationDataLoaderTorchio():
             lab_name = os.path.join(self.input_folder,
                                     self.data_file.iloc[item, 1])
             dti_name = os.path.join(self.input_folder,
-                                    self.data_file.iloc[item, 2]) 
+                                    self.data_file.iloc[item, 2])
             fa_name = os.path.join(self.input_folder,
                                    self.data_file.iloc[item, 3])
 
