@@ -1,0 +1,3 @@
+t2w,lab,dti,fa,ga,as,gender
+subj1_T2_img.nii.gz,subj1_tissue_labels.nii.gz,subj1_DTI.nii.gz,subj1_FA.nii.gz,41.0,41.14285714,Male
+subj2_T2_img.nii.gz,subj2_tissue_labels.nii.gz,subj2_DTI.nii.gz,subj2_FA.nii.gz,40.14285714,40.28571429,Female
