@@ -124,7 +124,7 @@ for i in range(len(l_t2w)):
                                                test_csv='data_test.csv',
                                                fixed_csv='data_train_fix.csv',
                                                results_dir='/path/to/the/folder/results-' + exp,
-                                               checkpoint_dir='/path/to/the/folder/checkpoints-' + exp,                                              fixed_csv='dhcp_data_train_fix.csv',
+                                               checkpoint_dir='/path/to/the/folder/checkpoints-' + exp,
                                                exp_name=exp_current[:-1],
                                                reg_net1='baseline3D',
                                                reg_net2='baseline3D',
