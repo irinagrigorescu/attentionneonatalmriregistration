@@ -142,8 +142,8 @@ class ImageRegistrationDataLoaderTorchio():
                                                types_to_apply=['DTI', 'dti'])
         # Canonical reorientation and resampling
         to_ras = torchio.transforms.ToCanonical()
-        # # Resampling to 0.75 isotropic - skip this, data already in that resolution
-        to_iso = torchio.transforms.Resample((1.0, 1.0, 1.0))  #(0.75, 0.75, 0.75))  # 1.0,1.0,1.0
+        # Resampling to isotropic resolution - skip this if data already in that resolution
+        to_iso = torchio.transforms.Resample((1.0, 1.0, 1.0))
         # Z-Normalisation
         to_znorm = torchio.transforms.ZNormalization(exclude=['DTI', 'dti'])
         # Rescaling
@@ -218,7 +218,7 @@ class ImageRegistrationDataLoaderTorchio():
             if self.is_cgmfix:
                 subj_name = self.data_file.iloc[item, 0].split('.nii')[0]
             else:
-                subj_name = self.data_file.iloc[item, 0].split('_T2_')[0]
+                subj_name = self.data_file.iloc[item, 0].split('_T2')[0]
 
             # Check and load data
             subject_dict = {'GA': ga_baby,
